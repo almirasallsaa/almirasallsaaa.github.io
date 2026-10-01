@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EduInfo – Sistem Informasi Manajemen Pendidikan. Blog pendidikan tentang digitalisasi dan pengelolaan data sekolah."
+    />
+    <meta
+      name="keywords"
+      content="Sistem Informasi Manajemen Pendidikan, EduInfo, sekolah, administrasi sekolah, digitalisasi pendidikan"
+    />
+    <title>EduInfo | Sistem Informasi Manajemen Pendidikan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="EduInfo">
+          <span class="brand-mark">E</span>
+          <span>EduInfo</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-menu">
+          <a href="#home" class="active">Beranda</a>
+          <a href="#articles">Artikel</a>
+          <a href="#about">Tentang</a>
+          <a href="#discussion">Diskusi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <span class="eyebrow">EduInfo</span>
+            <h1>Sistem Informasi Manajemen Pendidikan</h1>
+            <p class="hero-subtitle">
+              Teknologi untuk pengelolaan pendidikan yang lebih efektif
+            </p>
+            <p class="hero-description">
+              EduInfo adalah blog pendidikan yang membahas pemanfaatan Sistem
+              Informasi Manajemen (SIM) dalam membantu sekolah menjalankan
+              administrasi, data, komunikasi, dan pengambilan keputusan dengan
+              lebih baik.
+            </p>
+
+            <div class="cta-group">
+              <a href="#articles" class="btn btn-primary">Baca Artikel</a>
+              <a href="#discussion" class="btn btn-outline">Ikuti Diskusi</a>
+            </div>
+
+            <ul class="hero-stats">
+              <li><strong>4</strong><span>Artikel utama</span></li>
+              <li><strong>SIM</strong><span>Dalam pendidikan</span></li>
+              <li><strong>100%</strong><span>Responsive</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="glass-card">
+              <div class="card-top">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+
+              <div class="dashboard">
+                <div class="dashboard-header">
+                  <div>
+                    <p>Rekap Sekolah</p>
+                    <h3>Data Pendidikan</h3>
+                  </div>
+                  <span class="badge">Aktif</span>
+                </div>
+
+                <div class="mini-chart">
+                  <span style="height: 38%"></span>
+                  <span style="height: 58%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 66%"></span>
+                  <span style="height: 84%"></span>
+                  <span style="height: 92%"></span>
+                </div>
+
+                <div class="stat-grid">
+                  <div>
+                    <small>Siswa</small>
+                    <strong>1.250</strong>
+                  </div>
+                  <div>
+                    <small>Guru</small>
+                    <strong>86</strong>
+                  </div>
+                  <div>
+                    <small>Ruang</small>
+                    <strong>24</strong>
+                  </div>
+                  <div>
+                    <small>Laporan</small>
+                    <strong>98%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section container">
+        <div class="section-heading">
+          <span class="eyebrow">Featured</span>
+          <h2>Artikel Unggulan</h2>
+        </div>
+        <div id="featuredArticle" class="featured-card"></div>
+      </section>
+
+      <section id="articles" class="articles-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Artikel</span>
+            <h2>Berita & Informasi Terkini</h2>
+          </div>
+
+          <div class="toolbar">
+            <div class="search-box">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Cari artikel..."
+                aria-label="Cari artikel"
+              />
+            </div>
+
+            <div class="filter-group" aria-label="Filter kategori">
+              <button class="filter-btn active" data-filter="all">Semua</button>
+              <button class="filter-btn" data-filter="SIM Pendidikan">
+                SIM Pendidikan
+              </button>
+              <button class="filter-btn" data-filter="Digitalisasi">
+                Digitalisasi
+              </button>
+              <button class="filter-btn" data-filter="Pengambilan Keputusan">
+                Pengambilan Keputusan
+              </button>
+              <button class="filter-btn" data-filter="Keamanan Informasi">
+                Keamanan Informasi
+              </button>
+            </div>
+          </div>
+
+          <div class="content-grid">
+            <div class="article-column">
+              <div id="articleList" class="article-list"></div>
+            </div>
+
+            <aside class="sidebar">
+              <div class="sidebar-card">
+                <h3>Recent Posts</h3>
+                <div id="recentPosts" class="recent-posts"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container about-box">
+          <div class="about-text">
+            <span class="eyebrow">Tentang Blog</span>
+            <h2>Tentang EduInfo</h2>
+            <p>
+              EduInfo merupakan blog sederhana yang dibuat sebagai media
+              pembelajaran mengenai Sistem Informasi Manajemen Pendidikan. Blog
+              ini membahas bagaimana teknologi informasi dapat membantu sekolah
+              dalam pengelolaan data, administrasi, komunikasi, dan pengambilan
+              keputusan.
+            </p>
+            <p>
+              Dengan pendekatan yang praktis dan mudah dipahami, EduInfo hadir
+              untuk membantu masyarakat pendidikan memahami pentingnya
+              digitalisasi dalam menjalankan sistem sekolah yang lebih efektif,
+              efisien, dan terarah.
+            </p>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+              alt="Mahasiswa dan guru berdiskusi pendidikan"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="benefit-section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Manfaat</span>
+            <h2>Manfaat SIM Pendidikan</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <div class="icon-box">📊</div>
+              <h3>Pengelolaan Data</h3>
+              <p>
+                Data siswa, guru, dan sekolah dapat dikelola secara terstruktur,
+                rapi, dan mudah diakses.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-box">⚙️</div>
+              <h3>Administrasi Lebih Efisien</h3>
+              <p>
+                Proses administrasi menjadi lebih cepat, otomatis, dan minim
+                kesalahan pencatatan.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-box">📈</div>
+              <h3>Pengambilan Keputusan</h3>
+              <p>
+                Informasi yang akurat membantu kepala sekolah dan pihak terkait
+                membuat keputusan yang tepat.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <div class="icon-box">💬</div>
+              <h3>Komunikasi Pendidikan</h3>
+              <p>
+                Sistem informasi memudahkan komunikasi antar guru, siswa, dan
+                orang tua dalam satu ekosistem.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="discussion" class="discussion-section">
+        <div class="container discussion-box">
+          <div class="discussion-copy">
+            <span class="eyebrow">Diskusi</span>
+            <h2>Ruang Diskusi</h2>
+            <p>
+              Berikan pendapat atau pertanyaan mengenai Sistem Informasi
+              Manajemen Pendidikan.
+            </p>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://forms.gle/your-google-form-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ikuti Diskusi
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 EduInfo – Sistem Informasi Manajemen Pendidikan</p>
+        <nav class="footer-nav">
+          <a href="#home">Beranda</a>
+          <a href="#articles">Artikel</a>
+          <a href="#about">Tentang</a>
+          <a href="#discussion">Diskusi</a>
+        </nav>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
